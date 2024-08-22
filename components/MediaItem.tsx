@@ -27,7 +27,7 @@ const MediaItem = ({ onClick, data, children }: Props) => {
   return (
     <div onClick={handleClick} className='flex items-center gap-x-3 cursor-pointer hover:bg-neutral-500/50 hover:text-white w-full p-2 rounded-md group'>
         <div className='relative rounded-md min-h-[48px] min-w-[48px] overflow-hidden '>
-            <Image fill src={imagePath} alt='media image' className='object-cover' />
+            <Image fill src={imagePath!} alt='media image' className='object-cover' />
         </div>
         <div className='flex flex-col gap-y-1 overflow-hidden flex-1'>
             <p className='text-white truncate text-sm hover:underline group-hover:font-semibold'>{data.title}</p>
